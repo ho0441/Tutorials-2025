@@ -191,7 +191,7 @@ With the person you are currently sharing your repo with, you need to change the
 
 ---
 
-- Name of Team Member 1, FAN, Degree
+- Minh Nguyen Ho, ho0441, MIT
 - Name of Team Member 2, FAN, Degree
 
 ---
