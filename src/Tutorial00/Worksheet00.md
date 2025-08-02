@@ -1,4 +1,5 @@
 # Tutorial 00 - Setting up the environment
+I want to test others need my approve for PR, and cannot change my main directly. 
 
 For this tutorial you will setup and execute your project through the GitHub CodeSpaces.  We will go through the development environment, adding collaborators, and the basics of the commands you will need to use.  These instructions have been created using markdown.  The source can be reviewed to identify symbols, tags, and notations for the production of markdown output.  If you are viewing this content in VS Code, you can click on the text here, and use the keyboard combination Ctrl+Shift+V to see a rendered version of the document.
 
