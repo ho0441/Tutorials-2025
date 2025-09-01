@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="YOUR NAME">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to the Simple Simon Game</title>
+  
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Simple Simon Game</h1>
+    <p>Please fill in the details to start playing the game.</p>
+  </header>
+
+  <main>
+    <form id="player-form" method="get" action="game.html">
+      
+      <div class="form-card">
+        <label for="playerName">What is your name:</label>
+        <input id="playerName" name="name" type="text" required size="24" class="form-item">
+
+        <label for="playerAge">What is your age:</label>
+        <input id="playerAge" name="age" type="number" min="10" max="100" required size="4" class="form-item">
+
+        <label for="playerEmail">What is your email address:</label>
+        <input id="playerEmail" name="email" type="email" required size="30" class="form-item">
+      </div>
+
+      <input type="submit" value="Begin" id="begin-button">
+    </form>
+  </main>
+</body>
+</html>
