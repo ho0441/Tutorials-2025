@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+main {
+  text-align: left;
+}
+
+#player-form {
+  padding: 30px;
+  margin: 60px auto;
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #d2d2d2;
+}
+
+/* Form card */
+.form-card {
+  min-height: 250px;
+  text-align: left;
+}
+
+/* Input fields */
+.form-item {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #373434;
+  box-sizing: border-box;
+}
+
+/* Begin button */
+#begin-button {
+  padding: 10px 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background-color: #006aff;
+  cursor: pointer;
+}
+
+/* Game area */
+#game {
+  background-color: #3b3b3b;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin: auto;
+}
+
+/* Game buttons container */
+#game-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* General game button styling */
+.game-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Unique button colors */
+#btn1 {
+  background-color: red;
+}
+
+#btn2 {
+  background-color: green;
+}
+
+#btn3 {
+  background-color: blue;
+}
+
+#btn4 {
+  background-color: yellow;
+}
+
+/* Start Game button*/
+#start-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#status-message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Score section (#score-details) */
+#score-details {
+  text-align: center;
+  margin: 10px;
+  line-height: 1.5;
+  font-size: 18px;
+}
