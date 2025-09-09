@@ -1,0 +1,57 @@
+[
+  {
+    "id": "aa001",
+    "title": "Four Winds Rock Art",
+    "artist": "",
+    "type": "Cave Art",
+    "period": "Ancient",
+    "region": "NT",
+    "description": "Weathered motifs depicting wind and journey stories.",
+    "condition": "Fragile",
+    "submitted_at": "2025-08-18",
+    "coords": [-12.4634, 130.8456],
+    "general_coords": [-12.6, 130.9],
+    "location_notes": "Accessible only with Traditional Owner permission.",
+    "location_sensitive_level": "General Locality",
+    "images": [
+      { "thumb": "assets/img/placeholders/ancient1_sm.jpg", "full": "assets/img/placeholders/ancient1.jpg", "alt": "Rock art panel", "caption": "Panel with ochre figures" },
+      { "thumb": "assets/img/placeholders/ancient2_sm.jpg", "full": "assets/img/placeholders/ancient2.jpg", "alt": "Detail view" }
+    ]
+  },
+  {
+    "id": "aa002",
+    "title": "River Spirit Mural",
+    "artist": "K. T.",
+    "type": "Mural",
+    "period": "Contemporary",
+    "region": "SA",
+    "description": "Community mural celebrating water and renewal.",
+    "condition": "Good",
+    "submitted_at": "2025-08-27",
+    "coords": [-34.92, 138.62],
+    "general_coords": [-34.93, 138.60],
+    "location_notes": "On the eastern wall of the community centre.",
+    "location_sensitive_level": "Exact",
+    "images": [
+      { "thumb": "assets/img/placeholders/mural1_sm.jpg", "full": "assets/img/placeholders/mural1.jpg", "alt": "Blue river mural", "caption": "Flowing river lines" }
+    ]
+  },
+  {
+    "id": "aa003",
+    "title": "Woven Stories",
+    "artist": "Gallery Collective",
+    "type": "Gallery Piece",
+    "period": "Contemporary",
+    "region": "VIC",
+    "description": "Mixed-media installation mapping songlines with thread and light.",
+    "condition": "Exhibited",
+    "submitted_at": "2025-07-09",
+    "coords": [-37.81, 144.96],
+    "general_coords": [-37.8, 144.95],
+    "location_notes": "Inside Gallery X (ticketed).",
+    "location_sensitive_level": "Region Only",
+    "images": [
+      { "thumb": "assets/img/placeholders/gallery1_sm.jpg", "full": "assets/img/placeholders/gallery1.jpg", "alt": "Thread and light installation" }
+    ]
+  }
+]

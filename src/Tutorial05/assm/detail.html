@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Art Detail | Indigenous Art Atlas</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
+      <ol>
+        <li><a href="browse.html">Browse</a></li>
+        <li aria-current="page">Detail</li>
+      </ol>
+    </nav>
+    <h1 id="artTitle">Loading…</h1>
+    <p class="hero-sub" id="artistLine"></p>
+  </header>
+
+  <main class="container container--narrow">
+    <section class="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="visually-hidden">Image gallery</h2>
+      <div class="gallery-frame">
+        <img id="heroImg" alt="" />
+      </div>
+      <ul class="thumbs" id="thumbs" role="list"></ul>
+      <p class="caption" id="imgCaption"></p>
+    </section>
+
+    <section>
+      <h2>Description</h2>
+      <p id="desc"></p>
+      <dl class="meta">
+        <div><dt>Type</dt><dd id="type"></dd></div>
+        <div><dt>Period</dt><dd id="period"></dd></div>
+        <div><dt>Condition</dt><dd id="condition"></dd></div>
+        <div><dt>Submitted</dt><dd id="submitted"></dd></div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="loc-title">
+      <h2 id="loc-title">Location</h2>
+      <p id="locNotes" class="muted"></p>
+      <div id="detailMap" class="map map--small" aria-hidden="true"></div>
+      <p class="ethics-note" id="sensitivityNote"></p>
+    </section>
+
+    <section>
+      <h2>Report content</h2>
+      <p class="muted">Logged-in users can report issues with this entry (prototype only).</p>
+      <button class="btn" id="reportBtn" type="button">Report this entry</button>
+      <p id="reportFeedback" class="muted" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Respect Country and culture. Sensitive sites may be generalised on the map.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    window.IAA.initDetail({
+      dataUrl: 'assets/data/art-sample.json'
+    });
+  </script>
+</body>
+</html>

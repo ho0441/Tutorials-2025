@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Browse Art | Indigenous Art Atlas</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="" crossorigin="">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+
+  <header class="site-header">
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
+      <ol>
+        <li><a href="about.html">About</a></li>
+        <li aria-current="page">Browse</li>
+      </ol>
+    </nav>
+    <h1 class="hero-title">Explore Indigenous Art</h1>
+    <p class="hero-sub">Discover ancient rock art, murals, galleries and public installations.</p>
+  </header>
+
+  <main class="container">
+    <section class="map-wrap" aria-labelledby="map-title">
+      <h2 id="map-title" class="visually-hidden">Map of approved art locations</h2>
+      <div id="map" class="map"></div>
+      <div class="map-legend" role="group" aria-label="Map layer filters">
+        <label><input type="checkbox" data-layer="Ancient" checked> Ancient</label>
+        <label><input type="checkbox" data-layer="Contemporary" checked> Contemporary</label>
+        <label><input type="checkbox" data-layer="Mural" checked> Murals</label>
+      </div>
+    </section>
+
+    <aside class="filters" aria-labelledby="filters-title">
+      <h2 id="filters-title">Search & Filter</h2>
+      <form id="filterForm">
+        <label for="q">Keyword</label>
+        <input id="q" name="q" type="search" placeholder="Title, artist, keywords" />
+
+        <label for="type">Art Type</label>
+        <select id="type" name="type">
+          <option value="">All</option>
+          <option>Cave Art</option>
+          <option>Mural</option>
+          <option>Gallery Piece</option>
+          <option>Public Installation</option>
+        </select>
+
+        <label for="period">Period</label>
+        <select id="period" name="period">
+          <option value="">All</option>
+          <option>Ancient</option>
+          <option>Contemporary</option>
+        </select>
+
+        <label for="region">Region</label>
+        <select id="region" name="region">
+          <option value="">All</option>
+          <option>SA</option>
+          <option>NT</option>
+          <option>WA</option>
+          <option>QLD</option>
+          <option>NSW</option>
+          <option>VIC</option>
+          <option>TAS</option>
+        </select>
+
+        <label for="sort">Sort</label>
+        <select id="sort" name="sort">
+          <option value="date_desc">Newest</option>
+          <option value="title_asc">Title A–Z</option>
+        </select>
+      </form>
+    </aside>
+
+    <section class="results" aria-live="polite">
+      <h2 class="visually-hidden">Art results</h2>
+      <ul id="results" class="card-grid" role="list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Indigenous Art Atlas — community-led, educational use only.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="" crossorigin=""></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    window.IAA.initBrowse({
+      dataUrl: 'assets/data/art-sample.json',
+      detailHref: id => `detail.html?id=${encodeURIComponent(id)}`
+    });
+  </script>
+</body>
+</html>
